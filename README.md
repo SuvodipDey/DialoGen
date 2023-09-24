@@ -65,7 +65,7 @@ The zip file [human_evaluation.zip](https://github.com/SuvodipDey/DialoGen/blob/
 	
  b. Create a directory named "multiwoz" and copy the following files into it - data.json, valListFile.txt, and testListFile.txt, train_dials.json, dev_dials.json, and test_dials.json.
 
- c. Train the encoder
+ c. Train the encoder on the MultiWOZ dataset.
  ```console
 ❱❱❱ python train_encoder_multiwoz.py -path=<enc_path> -src_file=train_encoder_multiwoz.py -model_file=encoder_model_multiwoz.py
 ```
