@@ -1,12 +1,12 @@
 # DialoGen: Generalized Long-Range Context Representation for Dialogue Systems
 
-1. Environment set up 
+## Environment set up 
 Create an environment with python 3.8 and install the required packages
 ```console
 ❱❱❱ pip install -r requirements.txt
 ```
 
-2. Set up DailyDialog Data
+## Set up DailyDialog Data
 	
  a. Download DailyDialog dataset from the following link: http://yanran.li/files/ijcnlp_dailydialog.zip
 	
@@ -18,13 +18,16 @@ Create an environment with python 3.8 and install the required packages
 	
  e. Copy the modified "ijcnlp_dailydialog" directory to the root folder of the codebase  
 
-3. Train Encoder (DailyDialog)
+## Train Encoder (DailyDialog)
 ```console
 ❱❱❱ python train_encoder.py -path=<enc_path> -src_file=train_encoder.py -model_file=encoder_model.py
 ```
 
-4. Train Decoder (DailyDialog)
-	a. DialoGen (with Z_t and top-k/last-k): python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=2 -max_context=4 -keep_k=2 -bow
+## Train Decoder (DailyDialog)
+a. DialoGen (with Z_t and top-k/last-k)
+```console
+❱❱❱ python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=2 -max_context=4 -keep_k=2 -bow
+```
 
 	b. DialoGen (only Z_t): python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large  -enc_dir=<enc_path> -dec_type=1 -bow
 
