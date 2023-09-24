@@ -29,7 +29,11 @@ a. DialoGen (with Z_t and top-k/last-k)
 ❱❱❱ python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=2 -max_context=4 -keep_k=2 -bow
 ```
 
-	b. DialoGen (only Z_t): python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large  -enc_dir=<enc_path> -dec_type=1 -bow
+b. DialoGen (only Z_t): 
+```console
+❱❱❱ python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large  -enc_dir=<enc_path> -dec_type=1 -bow
+```
+
 
 	c. DialoGen (only top-k/last-k): python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=0 -max_context=4 -keep_k=2
 
