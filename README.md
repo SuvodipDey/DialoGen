@@ -8,11 +8,11 @@ Create an environment with python 3.8 and install the required packages
 
 ## Set up DailyDialog Data
 	
- a. Download DailyDialog dataset from the following link: http://yanran.li/files/ijcnlp_dailydialog.zip
+ a. Download DailyDialog dataset from the this [link](http://yanran.li/files/ijcnlp_dailydialog.zip)
 	
  b. Unzip ijcnlp_dailydialog.zip
 	
- c. Download multi-reference test data for DailyDialog from the following link: https://raw.githubusercontent.com/prakharguptaz/multirefeval/master/multiref-dataset/multireftest.json
+ c. Download multi-reference test data for DailyDialog from this [link](https://raw.githubusercontent.com/prakharguptaz/multirefeval/master/multiref-dataset/multireftest.json)
 	
  d. Copy the "multireftest.json" file to the "ijcnlp_dailydialog" directory
 	
@@ -58,7 +58,7 @@ Note: <result_path> is the directory that contains the <hyp_file> and the <ref_f
 
 ## Human Evaluation Data for DailyDialog
 
-The zip file human_evaluation.zip contains all the source data that has been used to conduct the human evaluation. Each file in the directory shows the context and the response generated using the four models: A) DialoGen, B) DialogVED, C) DialoFlow, and D) DialoGPT.
+The zip file [human_evaluation.zip] contains all the source data that has been used to conduct the human evaluation. Each file in the directory shows the context and the response generated using the four models: A) DialoGen, B) DialogVED, C) DialoFlow, and D) DialoGPT.
 
 ## Train Encoder (MultiWOZ)
  a. Download MultiWOZ 2.1 dataset from https://github.com/budzianowski/multiwoz/tree/master/data followed by the required pre-processing instruction in https://github.com/budzianowski/multiwoz. 
