@@ -1,11 +1,14 @@
 # DialoGen: Generalized Long-Range Context Representation for Dialogue Systems
 
-1. Environment set up
-	a. Create an environment with python 3.8
-	b. Install the required packages (pip install -r requirements.txt)
+1. Environment set up 
+Create an environment with python 3.8 and install the required packages
+```console
+❱❱❱ pip install -r requirements.txt
+```
 
 2. Set up DailyDialog Data
-	a. Download DailyDialog dataset from the following link: http://yanran.li/files/ijcnlp_dailydialog.zip
+	
+ 	a. Download DailyDialog dataset from the following link: http://yanran.li/files/ijcnlp_dailydialog.zip
 	b. Unzip ijcnlp_dailydialog.zip
 	c. Download multi-reference test data for DailyDialog from the following link: https://raw.githubusercontent.com/prakharguptaz/multirefeval/master/multiref-dataset/multireftest.json
 	d. Copy the "multireftest.json" file to the "ijcnlp_dailydialog" directory
