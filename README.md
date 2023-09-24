@@ -42,17 +42,22 @@ c. DialoGen (only top-k/last-k):
 ❱❱❱ python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=0 -max_context=4 -keep_k=2
 ```
 
-6. Post-processing generated dialogues (DailyDialog)
-	a. DailyDialog references have a particular text format. Run the following command to match the format approximately. 
-	b. python post_process_dailydialog.py -in=<file_name>
-	c. No need to run the post-processing script for DialoGen as the conversion are already applied during the output generation. This script is meant for to convert the output of other baselines.
+## Post-processing generated dialogues (DailyDialog)
 
-7. Evaluation (DailyDialog)
-	a. python compute_metrics.py -in=<result_path> -hyp=<hyp_file>
-	b. Note: <result_path> is the directory that contains the <hyp_file> and the <ref_file>. By default, <result_path> = <dec_path>/result
+a. DailyDialog references have a particular text format. Run the following command to match the format approximately. 
 
-8. Human Evaluation Data for DailyDialog
-	a. Directory named "human_evaluation" contains all the soure data that has been used to conduct the human evaluation. Each file in the directory shows the context and the response generated using the four models: A) DialoGen, B) DialogVED, C) DialoFlow, and D) DialoGPT.
+b. python post_process_dailydialog.py -in=<file_name>
+
+c. No need to run the post-processing script for DialoGen as the conversion are already applied during the output generation. This script is meant for to convert the output of other baselines.
+
+## Evaluation (DailyDialog)
+a. python compute_metrics.py -in=<result_path> -hyp=<hyp_file>
+
+b. Note: <result_path> is the directory that contains the <hyp_file> and the <ref_file>. By default, <result_path> = <dec_path>/result
+
+## Human Evaluation Data for DailyDialog
+
+The zip file human_evaluation.zip contains all the source data that has been used to conduct the human evaluation. Each file in the directory shows the context and the response generated using the four models: A) DialoGen, B) DialogVED, C) DialoFlow, and D) DialoGPT.
 
 9. Train Encoder (MultiWOZ)
 	a. Download MultiWOZ 2.1 dataset from https://github.com/budzianowski/multiwoz/tree/master/data followed by the required pre-processing instruction in https://github.com/budzianowski/multiwoz. 
