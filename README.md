@@ -29,7 +29,7 @@ a. DialoGen (with Z_t and top-k/last-k)
 ```console
 ❱❱❱ python train_decoder.py -path=<dec_path> -src_file=train_decoder.py -model_file=decoder_model.py -gpt=large -enc_dir=<enc_path> -dec_type=2 -max_context=4 -keep_k=2 -bow
 ```
-Model checkpoint: The model used to compute the main result (model-id 4, Table 2 in the paper) is available [here](https://drive.google.com/file/d/1WO0muhHF6yKvAehSWMhP9Wh0h2G9f75Z/view?usp=drive_link). The encoder and the decoder weights are provided in encoder.pt and decoder.pt file, respectively.The encoder uses L1 loss for next utterance prediction. The decoder uses the following config (-gpt=large -dec_type=2 -max_context=4 -keep_k=2 -bow).
+Model checkpoint: The model used to compute the main result (model-id 4, Table 2 in the paper) is available [here](https://drive.google.com/file/d/1WO0muhHF6yKvAehSWMhP9Wh0h2G9f75Z/view?usp=drive_link). The encoder and the decoder weights are provided in encoder.pt and decoder.pt file, respectively. The encoder uses L1 loss for next utterance prediction. The decoder uses the following config (-gpt=large -dec_type=2 -max_context=4 -keep_k=2 -bow).
 
 b. DialoGen (only Z_t)
 
